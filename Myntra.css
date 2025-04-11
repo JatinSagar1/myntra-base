@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+#head{
+   height: 80px;
+   width: 100vw;
+   position: fixed;
+   box-shadow: 1px 5px 25px 0px rgba(0,0,0,0.5);
+   z-index: 1;
+   background-color: white;
+}
+
 .img{
     height: 50px;
     width: 80px;
@@ -16,11 +25,20 @@
     padding: 15px;
 }
 
+#sicon{
+   height: 20px;
+   width: 20px;
+   position: relative;
+   bottom: 40px;
+}
+
 #search{
-    bottom: 40px;
     position: relative;
-    margin-left: 20px;
+    bottom: 45px;
     width: 500px;
+    height: 35px;
+    background-color: rgb(244, 239, 239);
+    border-style: hidden;
 }
 
 .img2{
@@ -70,4 +88,10 @@
     width: 1080px;
     left: 220px;
     position: relative;
+ }
+
+ a{
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: black;
  }
