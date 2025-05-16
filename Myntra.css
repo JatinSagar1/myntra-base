@@ -6,7 +6,7 @@
 
 #head{
    height: 80px;
-   width: 100vw;
+   width: 100%;
    position: fixed;
    box-shadow: 1px 5px 25px 0px rgba(0,0,0,0.5);
    z-index: 1;
@@ -30,12 +30,13 @@
    width: 20px;
    position: relative;
    bottom: 40px;
+   cursor: pointer;
 }
 
 #search{
     position: relative;
     bottom: 45px;
-    width: 500px;
+    width: 37%;
     height: 35px;
     background-color: rgb(244, 239, 239);
     border-style: hidden;
@@ -94,4 +95,88 @@
    text-decoration: none;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    color: black;
+ }
+
+ .gap{
+   height: 120px;
+ }
+
+
+ .container{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .sarea{
+   /* height: 100%; */
+   width: 80%;
+   position: relative;
+   height: 100px;   
+   overflow: hidden;
+   mask-image: linear-gradient(
+      to right,
+      rgba(0,0,0,0) ,
+      rgba(0,0,0,1) 20%,
+      rgba(0,0,0,1) 80%,
+      rgba(0,0,0,0)
+      );
+ }
+
+ .item{
+   height: 100px;
+   width: 170px;
+   border-radius: 10px;
+   position: absolute;
+   /* left: -200px; */
+   left: calc(170px * 8);
+   animation-name: scroll;
+   animation-duration: 30s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   overflow: hidden;
+ }
+
+ @keyframes scroll {
+   to{
+      left: -200px;
+   }
+ }
+
+.itm1{
+   animation-delay: calc(30s / 8 * (8 - 1) * -1);
+ }
+
+.itm2{
+   animation-delay: calc(30s / 8 * (8 - 2) * -1);  
+ }
+
+.itm3{
+   animation-delay: calc(30s / 8 * (8 - 3) * -1);
+ }
+
+.itm4{
+   animation-delay: calc(30s / 8 * (8 - 4) * -1);
+ }
+
+.itm5{
+   animation-delay: calc(30s / 8 * (8 - 5) * -1);
+ }
+
+.itm6{
+   animation-delay: calc(30s / 8 * (8 - 6) * -1);
+ }
+
+.itm7{
+   animation-delay: calc(30s / 8 * (8 - 7) * -1);
+ }
+
+.itm8{
+   animation-delay: calc(30s / 8 * (8 - 8) * -1);
+ }
+
+ .bimgs{
+   height: 100%;
+   width: 100%;
  }
