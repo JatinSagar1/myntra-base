@@ -221,3 +221,48 @@
    height: 50%;
    width: 50%;
 }
+
+.gallery{
+   width: 100%;
+   max-width: 60%;
+   margin: auto;
+   position: relative;
+}
+
+.gallery-container {
+   position: relative;
+   margin-top: 2%;
+   margin-bottom: 2%;
+   overflow: hidden;
+   border-radius: 10px;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .gallery-wrap {
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+   width: 100%;
+ }
+ 
+ .gallery-wrap img {
+   width: 100%;
+   flex-shrink: 0;
+ }
+ 
+ .left, .right{
+   height: 50px;
+   width: 50px;
+   background-color: palevioletred;
+   border-radius: 50%;
+   position: absolute;
+   top: 50%;
+   cursor: pointer;
+ }
+
+ .right{
+   right: -50px;
+ }
+
+ .left{
+   left: -50px;
+ }
